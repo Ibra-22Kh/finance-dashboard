@@ -24,11 +24,37 @@ export interface GetKpisResponse{
     id: string;
     _id:string;
     __v:number;
+    
     totalProfit:number;
-
     totalRevenue:number;
     totalExpenses:number;
     expensesbyCategory: ExpensesByCategory;
     monthlyData:Array<Month>;
     dailyData:Array<Day>
+    createdAt:string;
+    udpatedAt:string;
+}
+
+export interface GetProductsResponse{
+    id: string;
+    _id:string;
+    __v:number;
+
+    price:number;
+    expense:number;
+    transactions:Array<string>;
+    createdAt:string;
+    udpatedAt:string;
+}
+
+export interface GetTransactionsResponse{
+    id: string;
+    _id:string;
+    __v:number;
+    buyer:string;
+    price:number;
+    amount:number;
+    productIds:Array<string>;
+    createdAt:string;
+    udpatedAt:string;
 }
