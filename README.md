@@ -1,2 +1,2 @@
 ## Finance Dashboard
- This was build using MERN stack development 
+MERN stack developement dashboard with smooth styling that I used from MUI5
